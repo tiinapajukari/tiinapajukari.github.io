@@ -4,10 +4,21 @@
 }
 
 .navigation li {
+  padding-top: 15px;
+  padding-bottom: 10px;
   display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation ul {
+  height: 50px;
 }
 
 .navigation a {
   text-decoration: none;
   color: #fff;
+}
+
+.navigation a:hover {
+  color: #ff0000;
 }
