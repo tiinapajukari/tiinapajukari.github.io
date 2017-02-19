@@ -19,7 +19,8 @@ body {
 }
 
 .navigation ul {
-  height: 50px;
+  list-style-type: none;
+  height: 80px;
 }
 
 .navigation a {
@@ -80,7 +81,8 @@ body {
 }
 
 .foot {
-  height: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 160px;
   background-color: rgba(88,88,88,0.3);
   color: #ffffff;
   text-align: center;
@@ -88,6 +90,12 @@ body {
 }
 
 @media screen and (min-width: 500px) {
+  .navigation li {
+    display: inline;
+  }
+  .navigation ul {
+    height: 30px;
+  }
   .blog-post {
     width: 70%;
   }
