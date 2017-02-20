@@ -1,5 +1,5 @@
 body {
-  background-image: url(sky.jpg);
+  background-image: url(assets/sky.jpg);
 }
 
 .navigation {
@@ -14,13 +14,13 @@ body {
 .navigation li {
   padding-top: 15px;
   padding-bottom: 10px;
-  display: inline-block;
+  display: inline;
   margin-right: 30px;
 }
 
 .navigation ul {
   list-style-type: none;
-  height: 80px;
+  height: 30px;
 }
 
 .navigation a {
@@ -49,7 +49,7 @@ body {
 
 
 .blog-post {
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
@@ -89,14 +89,26 @@ body {
 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .navigation li {
-    display: inline;
+    display: inline-block;
   }
   .navigation ul {
-    height: 30px;
+    height: 80px;
   }
   .blog-post {
-    width: 70%;
+    width: 100%;
+  }
+}
+
+@@media screen and (max-width: 350px) {
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation ul {
+    height: 80px;
+  }
+  .blog-post {
+    width: 100%;
   }
 }
