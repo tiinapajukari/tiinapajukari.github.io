@@ -1,24 +1,27 @@
 
 def getRandomInteger( min, max ) {
+  'use strict';
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-var num = 0
-window.onload = function(num = getRandomInteger(1, 10))
+var num = getRandomInteger(0, 10);
+var
 
 def compareNumbers(  first,  second  ) {
-  return first === second;
+  'use strict';
+  return first == second;
 }
 
 def guessTheNumber() {
-  var guess = window.propmt("Guess the number!", "Enter a number betbeen 1 and 10")
-  if( guess < 1 || guess > 10) {
-    window.alert("Your guess wont do!")
-    break
+  'use strict';
+  var guess = document.getElementById("number").value;
+  if( guess < 1 || guess > 10 || !Number.isInteger(num)) {
+    window.alert("Your guess wont do!");
   }
-  if (compareNumbers( num, guess)) {
-    window.alert("Your guess was right!")
+  else if (compareNumbers( num, guess)) {
+    window.alert("Your guess was right!");
   } else {
-    window.alert("Your guess was wrong!")
+    window.alert("Your guess was wrong!");
   }
+   num = getRandomInteger(0, 10)
 }
