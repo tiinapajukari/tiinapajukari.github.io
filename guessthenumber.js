@@ -9,13 +9,17 @@ var x = document.getElementById("button");
 
 def compareNumbers(  first,  second  ) {
   'use strict';
-  return first === second;
+  if( first === second ); {
+    return (true);
+  } else {
+    return (false);
+  }
 }
 
 def guessTheNumber() {
   'use strict';
   var guess = document.getElementById("number").value;
-  if( guess < 1 || guess > 10 || !Number.isInteger(num)) {
+  if( guess < 0 || guess > 10 || !Number.isInteger(num)) {
     window.alert("Your guess wont do!");
   }
   else if (compareNumbers( num, guess)) {
@@ -23,5 +27,5 @@ def guessTheNumber() {
   } else {
     window.alert("Your guess was wrong!");
   }
-   num = getRandomInteger(0, 10)
+   num = getRandomInteger(0, 10);
 }
