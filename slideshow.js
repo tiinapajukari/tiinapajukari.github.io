@@ -4,7 +4,11 @@ window.onload = function () {
   'use strict';
     $.getJSON("https://pajukat1-40fdc.firebaseio.com/.json", function (data) {
         //console.log(data);
-        $('#otsikko').hmtl(data).uutiset[index].otsikko)});
+        $('#otsikko').html(data.uutiset[index].otsikko);
+        $('#paivamaara').html(data.uutiset[index].paivamaara);
+        $('#sisalto').html(data.uutiset[index].sisalto);
+      });
+      display();
 }
 
 function display() {

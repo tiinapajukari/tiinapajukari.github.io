@@ -19,13 +19,22 @@ def compareNumbers(  first,  second  ) {
 def guessTheNumber() {
   'use strict';
   var guess = document.getElementById("number").value;
-  if( guess < 0 || guess > 10 || !Number.isInteger(num)) {
+  if (y <= 10 && y > 0 && Number.isInteger(randomNumber)) {
+       if (compareNumbers(randomNumber, y)) {
+           window.alert("You guessed right!");
+       } else {
+           window.alert("You guessed wrong!");
+       }
+   } else {
+       window.alert("Invalid input");
+   }
+  /*if( guess < 0 || guess > 10 || !Number.isInteger(num)) {
     window.alert("Your guess wont do!");
   }
   else if (compareNumbers( num, guess)) {
     window.alert("Your guess was right!");
   } else {
     window.alert("Your guess was wrong!");
-  }
+  }*/
    num = getRandomInteger(0, 10);
 }
