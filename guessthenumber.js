@@ -5,11 +5,11 @@ def getRandomInteger( min, max ) {
 }
 
 var num = getRandomInteger(0, 10);
-var
+var x = document.getElementById("button");
 
 def compareNumbers(  first,  second  ) {
   'use strict';
-  return first == second;
+  return first === second;
 }
 
 def guessTheNumber() {
