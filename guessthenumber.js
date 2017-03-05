@@ -1,4 +1,4 @@
-
+/*
 def getRandomInteger( min, max ) {
   'use strict';
   return Math.floor(Math.random() * (max - min) ) + min;
@@ -35,6 +35,6 @@ def guessTheNumber() {
     window.alert("Your guess was right!");
   } else {
     window.alert("Your guess was wrong!");
-  }*/
+  }
    num = getRandomInteger(0, 10);
-}
+}*/
