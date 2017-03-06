@@ -5,6 +5,7 @@ window.onload = function () {
   'use strict';
     display();
     nextSlide();
+    storage();
     inte;
 }
 
@@ -25,12 +26,11 @@ function nextSlide() {
     } else {
         index = 0;
     }
+    animation();
     display();
-    $("#animated").fadeOut( "slow", function() {display()} );
 }
 
-var inte = window.setInterval(function () {nextSlide()}, 3000);
-var last = index;
+var inte = window.setInterval(function () {nextSlide()}, 4000);
 
 function previousSlide() {
   'use strict';
@@ -39,7 +39,8 @@ function previousSlide() {
   } else {
     index = 2
   }
-  display()
+  animation();
+  display();
 }
 
 function change(button_id) {
@@ -61,3 +62,20 @@ function pauseCarousel() {
         pause = false;
     }
 };
+
+function storage() {
+    if ((localStorage.getItem('index')) === null || (localStorage.getItem('index')) < 2) {
+        localStorage.setItem('index', 0);
+        index = 0;
+    } else {
+        index = parseInt(localStorage.getItem('index'));
+    }
+}
+
+function animation() {
+  'use strict';
+  $('.efect').fadeOut('slow', function() {
+    display();
+    $('.efect').fadeIn('slow');
+  });
+}

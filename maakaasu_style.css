@@ -59,7 +59,12 @@ body {
 }
 
 .news {
+  width: 70%;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
   text-align: center;
+  padding: 20px;
   background-color: rgba(255,255,255,0.3);
   font-family: 'Roboto Condensed', sans-serif;
 }
