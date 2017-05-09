@@ -224,7 +224,7 @@
         //console.log(player.y);
         showScore();
 
-       infobutton = game.add.button(34, 2, "infobutton", pause, this);
+
     }
 
     function pause(event) {
