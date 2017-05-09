@@ -80,32 +80,32 @@ function createE() {
         player.x -= player.speed;
         if (player.x < 20) {
           player.x = 20;
-          sx = 16;
-          sy = 30;
+          //sx = 16;
+          //sy = 30;
         }
         break;
       case "right":
         player.x += player.speed;
         if (player.x > 490) {
           player.x = 490;
-          sx = 16;
-          sy = 90;
+          //sx = 16;
+          //sy = 90;
         }
         break;
       case "up":
         player.y -= player.speed;
         if (player.y < 20) {
           player.y = 20;
-          sx = 16;
-          sy = 60;
+          //sx = 16;
+          //sy = 60;
         }
         break;
       case "down":
         player.y += player.speed;
         if (player.y > 440) {
           player.y = 440;
-          sx = 16;
-          sy = 0;
+          //sx = 16;
+          //sy = 0;
         }
         break;
     }
