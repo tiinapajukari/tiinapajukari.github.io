@@ -94,6 +94,12 @@ body {
   height: auto;
 }
 
+.resize_1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
