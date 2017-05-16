@@ -52,7 +52,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-size: 150%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 
@@ -64,6 +64,16 @@ body {
   padding: 20px;
   background-color: rgba(255,255,255,0.3);
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.blog-post a {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-post a:hover {
+  color: #00F;
 }
 
 .game-post {
