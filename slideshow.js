@@ -26,7 +26,7 @@ function nextSlide() {
     } else {
         index = 0;
     }
-    animation();
+    //animation();
     display();
 }
 
@@ -39,7 +39,7 @@ function previousSlide() {
   } else {
     index = 2
   }
-  animation();
+  //animation();
   display();
 }
 
@@ -72,10 +72,10 @@ function storage() {
     }
 }
 
-function animation() {
+/*function animation() {
   'use strict';
   $('.efect').fadeOut('slow', function() {
     display();
     $('.efect').fadeIn('slow');
   });
-}
+}*/
