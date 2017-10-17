@@ -33,13 +33,7 @@ body {
   text-align: center;
 }
 
-@@media screen and (max-width: 350px) {
-  .navigation li {
-    display: inline-block;
-  }
-  .navigation ul {
-    height: 80px;
-  }
+@@media screen and (max-width: 300px) {
   .blog-post {
     width: 100%;
   }
